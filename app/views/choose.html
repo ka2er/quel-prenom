@@ -1,0 +1,12 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-default" ng-repeat="letter in alphabet">{{letter}}</button>
+</div>
+
+<div ng-repeat="name in names" class="clearfix">{{name}}
+
+  <div class="btn-group btn-group-xs pull-right ">
+    <button type="button" class="btn ion-checkmark btn-default" ng-class="{'btn-success' : yes.indexOf(name) != -1}" ng-click="toggle('yes', name)"> Oui</button>
+   <!-- <button type="button" class="btn btn-danger ion-close"> Non</button>-->
+    <button type="button" class="btn ion-help btn-default" ng-class="{'btn-warning' : maybe.indexOf(name) != -1}" ng-click="toggle('maybe', name)"> Peut-être</button>
+  </div>
+</div>

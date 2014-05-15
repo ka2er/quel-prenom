@@ -16,7 +16,11 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('have default sex', function () {
+    expect(scope.sex).toBe('male');
+  });
+
+  it('have default parent', function () {
+    expect(scope.parent).toBe('dad');
   });
 });
